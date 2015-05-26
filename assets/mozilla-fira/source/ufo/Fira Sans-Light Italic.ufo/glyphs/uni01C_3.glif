@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni01C3" format="1">
+  <advance width="274"/>
+  <unicode hex="01C3"/>
+  <outline>
+    <contour>
+      <point x="201" y="730" type="line"/>
+      <point x="125" y="188" type="line"/>
+      <point x="127" y="188" type="line"/>
+      <point x="203" y="730" type="line"/>
+    </contour>
+    <component base="period" xOffset="78"/>
+  </outline>
+</glyph>

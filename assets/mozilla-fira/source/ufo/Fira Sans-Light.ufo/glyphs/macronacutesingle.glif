@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="macronacutesingle" format="1">
+  <advance width="250"/>
+  <outline>
+    <component base="uni0304" yOffset="-70"/>
+    <component base="acutecomb.case" xOffset="20" yOffset="-79"/>
+    <contour>
+      <point x="125" y="517" type="move" name="_top"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>disableAlignment</key>
+          <true/>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>acutecomb.case</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

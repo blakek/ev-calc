@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni025F" format="1">
+  <advance width="342"/>
+  <unicode hex="025F"/>
+  <outline>
+    <contour>
+      <point x="342" y="194" type="line"/>
+      <point x="342" y="329" type="line"/>
+      <point x="2" y="329" type="line"/>
+      <point x="2" y="194" type="line"/>
+    </contour>
+    <component base="dotlessj" xOffset="33"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>disableAlignment</key>
+          <true/>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>dotlessj</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

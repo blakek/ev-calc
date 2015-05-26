@@ -1,0 +1,25 @@
+{
+  "name": "ev-calc",
+  "version": "0.1.0",
+  "homepage": "https://github.com/blakek/ev-calc",
+  "authors": [
+    "Blake Knight <oss.ideas@gmail.com> (http://blakek.me/)"
+  ],
+  "description": "Exposure Value (EV) calculator for photography (as an iOS webapp test)",
+  "main": "index.html",
+  "keywords": [
+    "EV",
+    "exposure",
+    "value",
+    "photo",
+    "photography"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

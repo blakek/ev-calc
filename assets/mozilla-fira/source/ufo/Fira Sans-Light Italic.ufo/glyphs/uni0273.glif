@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni0273" format="1">
+  <advance width="580"/>
+  <unicode hex="0273"/>
+  <outline>
+    <component base="n"/>
+    <component base="hookHELPERright" xOffset="415"/>
+    <contour>
+      <point x="243" y="-188" type="move" name="bottom"/>
+    </contour>
+  </outline>
+</glyph>

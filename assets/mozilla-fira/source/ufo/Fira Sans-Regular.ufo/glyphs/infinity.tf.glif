@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="infinity.tf" format="1">
+  <advance width="900"/>
+  <outline>
+    <component base="infinity" xOffset="2"/>
+  </outline>
+</glyph>

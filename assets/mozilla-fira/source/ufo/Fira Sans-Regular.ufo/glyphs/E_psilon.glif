@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Epsilon" format="1">
+  <advance width="535"/>
+  <unicode hex="0395"/>
+  <outline>
+    <component base="E"/>
+    <contour>
+      <point x="290" y="689" type="move" name="top"/>
+    </contour>
+    <contour>
+      <point x="90" y="689" type="move" name="topleft"/>
+    </contour>
+  </outline>
+</glyph>

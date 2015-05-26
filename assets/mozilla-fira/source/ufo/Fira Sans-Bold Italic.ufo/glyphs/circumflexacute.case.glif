@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="circumflexacute.case" format="1">
+  <advance width="601"/>
+  <outline>
+    <component base="uni0302.case" xOffset="-2" yOffset="-28"/>
+    <component base="acutedbl" xOffset="344" yOffset="294"/>
+    <contour>
+      <point x="297" y="696" type="move" name="_top"/>
+    </contour>
+  </outline>
+</glyph>

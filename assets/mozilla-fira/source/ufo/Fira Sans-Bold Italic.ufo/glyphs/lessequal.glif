@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="lessequal" format="1">
+  <advance width="521"/>
+  <unicode hex="2264"/>
+  <outline>
+    <component base="less" xOffset="15" yOffset="105"/>
+    <component base="minus" xOffset="-35" yOffset="-257"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>disableAlignment</key>
+          <true/>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>less</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

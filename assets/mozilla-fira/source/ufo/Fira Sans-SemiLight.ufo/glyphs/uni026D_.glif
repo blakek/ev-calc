@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni026D" format="1">
+  <advance width="260"/>
+  <unicode hex="026D"/>
+  <outline>
+    <contour>
+      <point x="145" y="0" type="line"/>
+      <point x="145" y="738" type="line"/>
+      <point x="115" y="734" type="line"/>
+      <point x="115" y="0" type="line"/>
+    </contour>
+    <component base="hookHELPER" xOffset="349" xScale="-1"/>
+    <contour>
+      <point x="130" y="734" type="move" name="top"/>
+    </contour>
+    <contour>
+      <point x="209" y="-193" type="move" name="bottom"/>
+    </contour>
+  </outline>
+</glyph>

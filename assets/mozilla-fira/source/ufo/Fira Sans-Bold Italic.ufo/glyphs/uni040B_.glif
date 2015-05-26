@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni040B" format="1">
+  <advance width="752"/>
+  <unicode hex="040B"/>
+  <outline>
+    <contour>
+      <point x="64" y="696" type="line"/>
+      <point x="43" y="546" type="line"/>
+      <point x="567" y="546" type="line"/>
+      <point x="607" y="696" type="line"/>
+    </contour>
+    <component base="uni04BA" xOffset="125"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>disableAlignment</key>
+          <true/>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>uni04BA</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

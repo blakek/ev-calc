@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni0283" format="1">
+  <advance width="300"/>
+  <unicode hex="0283"/>
+  <outline>
+    <contour>
+      <point x="104" y="527" type="line"/>
+      <point x="104" y="0" type="line"/>
+      <point x="196" y="0" type="line"/>
+      <point x="196" y="527" type="line"/>
+    </contour>
+    <component base="hookaboveHELPER2" xOffset="74"/>
+    <component base="hookHELPER" xOffset="-100"/>
+    <contour>
+      <point x="258" y="739" type="move" name="top"/>
+    </contour>
+    <contour>
+      <point x="51" y="-202" type="move" name="bottom"/>
+    </contour>
+  </outline>
+</glyph>

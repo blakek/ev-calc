@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="circumflexgrave.case" format="1">
+  <advance width="492"/>
+  <outline>
+    <component base="uni0302.case" xOffset="100" yOffset="-43"/>
+    <component base="gravedbl" xOffset="-14" yOffset="216"/>
+    <contour>
+      <point x="298" y="689" type="move" name="_top"/>
+    </contour>
+  </outline>
+</glyph>

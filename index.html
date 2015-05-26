@@ -1,1 +1,236 @@
-Hello, web!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-title" content="EV Calc">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<title>EV Calculator</title>
+
+	<link rel="stylesheet" href="assets/css/ev-calc.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Exposure Value Calculator</h1>
+
+		<div>
+			<div>
+				<label for="N">Aperature</label>
+				<input id="N" type="number" step="0.1" placeholder="Aperature">
+			</div>
+			<div>
+				<label for="t">Exposure time</label>
+				<input id="t" type="number" placeholder="Exposure time">
+			</div>
+			<div>
+				<label for="S">Sensitivity</label>
+				<input id="S" type="number" step="100" placeholder="Sensitivity">
+			</div>
+			<div>
+				<label for="desc">Example Conditions</label>
+				<div id="desc">&nbsp;</div>
+			</div>
+		</div>
+
+		<div>
+			<label for="EV">EV<sub>S</sub></label>
+			<input id="EV" type="text" readonly="readonly">
+		</div>
+	</div>
+
+	<script src="assets/jquery/dist/jquery.min.js" charset="utf-8"></script>
+	<script>
+	var log2 = Math.log2 || function (x) {
+		return Math.log(x) / Math.LN2;
+	};
+
+	var isArray = Array.isArray || function (o) {
+		return Object.prototype.toString.call(o) === '[object Array]';
+	}
+
+	var conditions = {
+		"-11": "Milky Way galactic center",
+		"-10": "Milky Way galactic center",
+		"-9": "Milky Way galactic center",
+		"-8": "Dark night with subject under starlight (no or little moonlight)",
+		"-7": "Dark night with subject under starlight (no or little moonlight)",
+		"-6": [
+			"Subject in moonlight of a quarter moon",
+			"Aurora borealis and australis"
+		],
+		"-5": [
+			"Subject in moonlight of a half moon",
+			"Aurora borealis and australis"
+		],
+		"-4": [
+			"Subject in moonlight of a gibbous moon",
+			"Bright aurora borealis and australis"
+		],
+		"-3": [
+			"Subject in moonlight of a full moon",
+			"Bright aurora borealis and australis"
+		],
+		"-2": [
+			"Subject in moonlight of a full moon",
+			"Full moon snowscape"
+		],
+		"-1": "Subject in dim ambient lighting",
+		"0": "Subject in dim ambient lighting",
+		"1": [
+			"Subject in dim ambient lighting",
+			"Distant view of lit skyline"
+		],
+		"2": [
+			"Distant views of lighted buildings",
+			"Total eclipse of moon",
+			"Lightning"
+		],
+		"3": [
+			"Floodlit buildings, monuments, and fountains",
+			"Fireworks"
+		],
+		"4": [
+			"Christmas lights",
+			"Candle light",
+			"Floodlit buildings, monuments, and fountains",
+			"Subject under bright street lamps"
+		],
+		"5": [
+			"Christmas lights",
+			"Night vehicle traffic",
+			"Bright floodlit buildings, monuments, and fountains",
+			"Dark (e.g. night) home interiors",
+			"Subject lit by campfire fire at night",
+			"Dimly lit auditorium"
+		],
+		"6": [
+			"Home interiors",
+			"Fairs and amusement parks",
+		],
+		"7": [
+			"Fairly brightly lit city streets at night",
+			"Window displays",
+			"Fairs and amusement parks",
+			"Indoor sports",
+			"Home interiors",
+			"Offices and work areas",
+			"Bottom of rainforest canopy"
+		],
+		"8": [
+			"Bright street scenes (e.g. Times Square or Las Vegas)",
+			"Fairly brightly lit city streets at night",
+			"Window displays",
+			"Galleries",
+			"Sports events, stage shows, etc.",
+			"Indoor sports",
+			"Football, baseball etc. at night or indoors",
+			"Floodlit circuses and similar shows",
+			"Offices and work areas",
+			"Subject lit by bright florescent lights",
+			"Campfires, bonfires, burning buildings"
+		],
+		"9": [
+			"Landscape/skyline ~10 minutes after sunset",
+			"Neon sign",
+			"Night sports",
+			"Galleries",
+			"Sports events, stage shows, etc.",
+			"Floodlit ice shows",
+			"Subject lit by spotlight",
+			"Fires and burning buildings"
+		],
+		"10": [
+			"Landscapes or skylines after sunset",
+			"Neon sign",
+			"Galleries",
+		],
+		"11": [
+			"Landscapes or skylines immediately after sunset",
+			"Subjects in shade",
+			"Galleries"
+		],
+		"12": [
+			"Typical scene, heavy overcast",
+			"Subject in open shade, clear sunlight",
+			"Landscape or skyline at sunset",
+			"Crescent moon"
+		],
+		"13": [
+			"Typical scene, cloudy bright (no shadows)",
+			"Skyline just before sunset",
+			"Quarter moon"
+		],
+		"14": [
+			"Typical scene in hazy sunlight (soft shadows)",
+			"Rainbow with cloudy sky background",
+			"Skyline just before sunset",
+			"Gibbous moon"
+		],
+		"15": [
+			"Typical scene in full or slightly hazy sunlight (distinct shadows)",
+			"Rainbow with clear sky background",
+			"Full moon"
+		],
+		"16": "Light sand or snow in full or slightly hazy sunlight (distinct shadows)",
+		"17": "Very bright lighting",
+		"18": "Very bright lighting",
+		"19": "Very bright lighting",
+		"20": "Very, very bright lighting",
+		"21": "Extremely bright lighting",
+		limits: {
+			high: 21,
+			low: -11
+		}
+	};
+
+	function calcEV(N, t, S) {
+		if (S === undefined || S === 'NaN' || S === '') {
+			S = 100;
+		}
+
+		var EV = log2(N * N) + log2(1 / t) - log2(S / 100);
+
+		console.log('EV: ' + EV);
+
+		return Math.round(EV);
+	}
+
+	function getDescription(EV) {
+		if (EV > conditions.limits.high) {
+			EV = conditions.limits.high;
+		} else if (EV < conditions.limits.low) {
+			EV = conditions.limits.low;
+		}
+
+		if (isArray(conditions[EV])) {
+			var ret = '';
+
+			conditions[EV].forEach(function (str) {
+				ret += str + '<br />';
+			});
+
+			return ret;
+		} else {
+			return conditions[EV];
+		}
+	}
+
+	$('input').change(function () {
+		var N = $('#N').val(),
+		t = $('#t').val(),
+		S = $('#S').val();
+
+		if (S === undefined || S === 'NaN' || S === '') {
+			$('#S').val(100);
+			S = 100;
+		}
+
+		var EV = calcEV(N, t, S);
+
+		$('#EV').val(EV);
+		$('#desc').html(getDescription(Math.round(EV)));
+	});
+	</script>
+</body>
+</html>

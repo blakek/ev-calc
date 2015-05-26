@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="daggerdbl.tf" format="1">
+  <advance width="560"/>
+  <outline>
+    <contour>
+      <point x="25" y="295" type="line"/>
+      <point x="25" y="136" type="line"/>
+      <point x="535" y="136" type="line"/>
+      <point x="535" y="295" type="line"/>
+    </contour>
+    <component base="dagger.tf"/>
+  </outline>
+</glyph>

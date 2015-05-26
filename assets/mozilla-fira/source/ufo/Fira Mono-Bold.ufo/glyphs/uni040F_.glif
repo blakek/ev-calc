@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni040F" format="1">
+  <advance width="600"/>
+  <unicode hex="040F"/>
+  <outline>
+    <component base="TseHelper-cy"/>
+    <component base="descStraight-cy.case" xOffset="-19"/>
+  </outline>
+</glyph>

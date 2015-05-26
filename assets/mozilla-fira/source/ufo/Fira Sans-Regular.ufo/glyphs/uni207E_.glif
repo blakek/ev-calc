@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni207E" format="1">
+  <advance width="395"/>
+  <unicode hex="207E"/>
+  <outline>
+    <component base="parenright.dnom" yOffset="277"/>
+  </outline>
+</glyph>

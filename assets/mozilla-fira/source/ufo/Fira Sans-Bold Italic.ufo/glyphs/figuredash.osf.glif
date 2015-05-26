@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="figuredash.osf" format="1">
+  <advance width="548"/>
+  <outline>
+    <component base="figuredash"/>
+  </outline>
+</glyph>

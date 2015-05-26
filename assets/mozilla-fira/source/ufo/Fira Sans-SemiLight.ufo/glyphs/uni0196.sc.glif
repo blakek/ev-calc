@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni0196.sc" format="1">
+  <advance width="325"/>
+  <outline>
+    <contour>
+      <point x="110" y="560" type="line"/>
+      <point x="110" y="191" type="line"/>
+      <point x="140" y="191" type="line"/>
+      <point x="140" y="560" type="line"/>
+    </contour>
+    <component base="hookHELPER" xOffset="344" yOffset="191" xScale="-1"/>
+  </outline>
+</glyph>

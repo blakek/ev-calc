@@ -1,0 +1,116 @@
+@import url("../mozilla-fira/fira.css");
+
+html {
+	font-family: "Fira Sans", "Helvetica", "Arial", sans-serif;
+	font-weight: 300;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	font-weight: 200;
+	line-height: 1.1;
+	color: #000;
+}
+
+h1,
+.h1 {
+	font-size: 39px;
+}
+h2,
+.h2 {
+	font-size: 32px;
+}
+h3,
+.h3 {
+	font-size: 26px;
+}
+h4,
+.h4 {
+	font-size: 19px;
+}
+h5,
+.h5 {
+	font-size: 15px;
+}
+h6,
+.h6 {
+	font-size: 13px;
+}
+
+small,
+.small {
+	font-size: 70%;
+}
+
+label {
+	font-weight: 400;
+}
+
+code,
+kbd,
+pre,
+samp,
+input[type="text"],
+input[type="number"] {
+	font-family: "Fira Sans Mono", "Fira Mono", Monaco, Menlo, Consolas, "Courier New", monospace;
+}
+
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+	.container {
+		width: 750px;
+	}
+}
+@media (min-width: 992px) {
+	.container {
+		width: 970px;
+	}
+}
+@media (min-width: 1200px) {
+	.container {
+		width: 1170px;
+	}
+}
+
+.jumbotron {
+	padding: 30px 15px;
+	margin-bottom: 30px;
+	color: inherit;
+	background-color: #eeeeee;
+	border-radius: 6px;
+}
+
+.jumbotron h1,
+.jumbotron .h1 {
+	font-size: 62px;
+}
+
+.jumbotron p {
+	margin-bottom: 15px;
+	font-size: 23px;
+	font-weight: 200;
+}
+
+@media screen and (min-width: 768px) {
+	.jumbotron {
+		padding: 48px 60px;
+	}
+}

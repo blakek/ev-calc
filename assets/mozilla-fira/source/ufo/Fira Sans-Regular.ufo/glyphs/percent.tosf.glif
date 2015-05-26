@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="percent.tosf" format="1">
+  <advance width="900"/>
+  <outline>
+    <component base="percent" xOffset="37"/>
+  </outline>
+</glyph>
