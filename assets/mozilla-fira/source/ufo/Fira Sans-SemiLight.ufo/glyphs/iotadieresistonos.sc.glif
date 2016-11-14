@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<glyph name="iotadieresistonos.sc" format="1">
-  <advance width="270"/>
-  <outline>
-    <component base="i.sc"/>
-    <component base="uni0308.sc" xOffset="-7"/>
-  </outline>
-</glyph>

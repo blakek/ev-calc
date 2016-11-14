@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<glyph name="uni2086" format="1">
-  <advance width="400"/>
-  <unicode hex="2086"/>
-  <outline>
-    <component base="six.dnom" xOffset="-64" yOffset="-193"/>
-  </outline>
-</glyph>

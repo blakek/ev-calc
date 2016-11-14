@@ -1,0 +1,65 @@
+{
+  "name": "ev-calc",
+  "version": "2.0.0",
+  "description": "Exposure Value (EV) calculator for photography (as an iOS webapp test)",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack -p",
+    "dev": "npm run start",
+    "lint": "xo --fix",
+    "start": "webpack-dev-server -d --hot --inline --progress --config webpack.config.dev.babel.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Blake Knight <oss.ideas@gmail.com> (http://blakek.me/)",
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      "latest",
+      "react"
+    ]
+  },
+  "xo": {
+    "envs": [
+      "browser"
+    ],
+    "esnext": true,
+    "extends": "xo-react",
+    "semicolon": false,
+    "space": 2,
+    "rules": {
+      "object-curly-spacing": [
+        "error",
+        "always"
+      ],
+      "react/jsx-space-before-closing": [
+        "error",
+        "always"
+      ]
+    }
+  },
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-2": "^6.11.0",
+    "css-loader": "^0.25.0",
+    "eslint-config-xo-react": "^0.10.0",
+    "eslint-plugin-react": "^6.6.0",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.21.0",
+    "postcss-cssnext": "^2.7.0",
+    "postcss-loader": "^1.1.0",
+    "regenerator": "^0.8.46",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1",
+    "xo": "^0.17.1"
+  },
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
+  }
+}

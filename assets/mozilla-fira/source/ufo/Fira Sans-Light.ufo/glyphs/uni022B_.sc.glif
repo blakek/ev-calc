@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<glyph name="uni022B.sc" format="1">
-  <advance width="618"/>
-  <outline>
-    <component base="o.sc"/>
-    <component base="dieresismacroncomb" xOffset="184" yOffset="40"/>
-  </outline>
-</glyph>
