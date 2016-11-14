@@ -1,0 +1,26 @@
+:root {
+  --myGradient: linear-gradient(to bottom right, rebeccaPurple, springGreen);
+}
+
+@keyframes hue {
+  from { filter: hue-rotate(0); }
+  to { filter: hue-rotate(360deg); }
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.appContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: var(--myGradient);
+  color: white;
+  font-family: -apple-system, Helvetica, sans-serif;
+  animation: hue 3s ease;
+}
