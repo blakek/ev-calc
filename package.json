@@ -25,8 +25,6 @@
     ],
     "esnext": true,
     "extends": "xo-react",
-    "semicolon": false,
-    "space": 2,
     "rules": {
       "object-curly-spacing": [
         "error",
@@ -36,7 +34,12 @@
         "error",
         "always"
       ]
-    }
+    },
+    "semicolon": false,
+    "settings": {
+      "import/resolver": "webpack"
+    },
+    "space": 2
   },
   "devDependencies": {
     "babel-core": "^6.10.4",
@@ -59,7 +62,9 @@
     "xo": "^0.17.1"
   },
   "dependencies": {
+    "eslint-import-resolver-webpack": "^0.7.0",
     "react": "^15.1.0",
-    "react-dom": "^15.1.0"
+    "react-dom": "^15.1.0",
+    "rebass": "^0.3.3"
   }
 }

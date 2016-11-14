@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { Example } from './components/Example'
+import { AppSkeleton } from './components/AppSkeleton'
 
 render((
-  <Example />
+  <AppSkeleton />
 ), document.querySelector('#app-root'))
