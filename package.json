@@ -30,6 +30,9 @@
         "error",
         "always"
       ],
+      "react/jsx-no-bind": [
+        "off"
+      ],
       "react/jsx-space-before-closing": [
         "error",
         "always"
