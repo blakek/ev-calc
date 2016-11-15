@@ -6,8 +6,7 @@ export default {
 
   output: {
     path: path.resolve('./dist'),
-    filename: '[name].bundle.js',
-    publicPath: '/components/'
+    filename: '[name].bundle.js'
   },
 
   resolve: {
