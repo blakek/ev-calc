@@ -19,6 +19,7 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 2rem;
   background-image: var(--myGradient);
   color: white;
   font-family: -apple-system, Helvetica, sans-serif;
