@@ -1,8 +1,13 @@
 .calculatorContainer {
   flex: 2;
-  width: 100%;
+  width: 30rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-top: 3rem;
+}
+
+.section {
+  padding-bottom: 2rem;
 }
