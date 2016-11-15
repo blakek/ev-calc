@@ -6,6 +6,7 @@
   "scripts": {
     "build": "webpack -p",
     "deploy": "cd dist && git add --all && git commit -m \"Release: $(date)\" && git push",
+    "deploy:clean": "rm -rf dist && git clone https://github.com/blakek/ev-calc --branch gh-pages dist && npm run deploy",
     "dev": "npm run start",
     "lint": "xo --fix",
     "start": "webpack-dev-server -d --hot --inline --progress --config webpack.config.dev.babel.js",
