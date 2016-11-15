@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<glyph name="uni1E47.sc" format="1">
-  <advance width="578"/>
-  <outline>
-    <component base="n.sc"/>
-    <component base="dotbelowcomb" xOffset="152"/>
-  </outline>
-</glyph>

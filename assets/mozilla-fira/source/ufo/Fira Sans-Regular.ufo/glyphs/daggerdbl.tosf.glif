@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<glyph name="daggerdbl.tosf" format="1">
-  <advance width="560"/>
-  <outline>
-    <component base="daggerdbl" xOffset="25"/>
-  </outline>
-</glyph>

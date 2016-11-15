@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<glyph name="uni1ECF.sc" format="1">
-  <advance width="612"/>
-  <outline>
-    <component base="o.sc"/>
-    <component base="hookabovecomb.case" xOffset="176" yOffset="-125"/>
-  </outline>
-</glyph>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<glyph name="figuredash.tf" format="1">
-  <advance width="560"/>
-  <outline>
-    <component base="figuredash" xOffset="3"/>
-  </outline>
-</glyph>

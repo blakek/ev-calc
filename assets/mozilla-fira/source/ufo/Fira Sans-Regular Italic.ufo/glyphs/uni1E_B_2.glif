@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<glyph name="uni1EB2" format="1">
-  <advance width="567"/>
-  <unicode hex="1EB2"/>
-  <outline>
-    <component base="A"/>
-    <component base="brevehookabove.case" xOffset="103"/>
-  </outline>
-</glyph>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<glyph name="uni1ED5.sc" format="1">
-  <advance width="617"/>
-  <outline>
-    <component base="o.sc"/>
-    <component base="circumflexhookabove" xOffset="172" yOffset="40"/>
-  </outline>
-</glyph>
