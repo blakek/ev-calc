@@ -5,7 +5,7 @@ import { EVCalculator } from 'components/EVCalculator'
 
 export const AppSkeleton = () => (
   <div className={styles.appContainer}>
-    <Heading level={1}>
+    <Heading level={1} style={{ fontSize: 18 }}>
       📸 Exposure Value
     </Heading>
 
