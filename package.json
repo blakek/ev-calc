@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "build": "webpack -p",
+    "deploy": "cd dist && git add --all && git commit -m \"Release: $(date)\" && git push",
     "dev": "npm run start",
     "lint": "xo --fix",
     "start": "webpack-dev-server -d --hot --inline --progress --config webpack.config.dev.babel.js",
