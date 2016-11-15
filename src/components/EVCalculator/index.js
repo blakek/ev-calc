@@ -59,36 +59,38 @@ export class EVCalculator extends Component {
   render() {
     return (
       <div className={styles.calculatorContainer}>
-        <Input
-          onChange={e => this.inputChanged(e.currentTarget.value, 'aperature')}
-          label="Aperature (ƒ/number)"
-          value={this.state.aperature}
-          type="number"
-        />
+        <div className={styles.section}>
+          <Input
+            onChange={e => this.inputChanged(e.currentTarget.value, 'aperature')}
+            label="Aperature (ƒ/number)"
+            value={this.state.aperature}
+            type="number"
+          />
 
-        <Input
-          onChange={e => this.inputChanged(e.currentTarget.value, 'exposureTime')}
-          label="Exposure time (seconds)"
-          value={this.state.exposureTime}
-          type="number"
-        />
+          <Input
+            onChange={e => this.inputChanged(e.currentTarget.value, 'exposureTime')}
+            label="Exposure time (seconds)"
+            value={this.state.exposureTime}
+            type="number"
+          />
 
-        <Input
-          onChange={e => this.inputChanged(e.currentTarget.value, 'sensitivity')}
-          label="Sensitivity (ISO)"
-          value={this.state.sensitivity}
-          type="number"
-        />
+          <Input
+            onChange={e => this.inputChanged(e.currentTarget.value, 'sensitivity')}
+            label="Sensitivity (ISO)"
+            value={this.state.sensitivity}
+            type="number"
+          />
 
-        <div>
-          <Label>Exposure Value (EV)</Label>
+          <div>
+            <Label>Exposure Value (EV)</Label>
 
-          <Text>
-            {this.state.exposureValue}
-          </Text>
+            <Text>
+              {this.state.exposureValue}
+            </Text>
+          </div>
         </div>
 
-        <div>
+        <div className={styles.section}>
           <Label>Example Conditions</Label>
 
           {getConditions(this.state.exposureValue).map((condition, index) => (
