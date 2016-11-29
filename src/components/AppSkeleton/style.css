@@ -12,6 +12,10 @@ html, body {
   padding: 0;
 }
 
+body {
+  font-size: 1.6rem;
+}
+
 .appContainer {
   width: 100vw;
   height: 100vh;
