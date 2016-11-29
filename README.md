@@ -2,7 +2,7 @@
 
 > Exposure Value (EV) calculator for photography (as an iOS webapp test)
 
-Calculate Exposure Value (EV) for a given exposure time (seconds), aperature size (ƒ/number), and sensor sensitivity (ISO).  Also shows common conditions for that EV.  Know generally what settings you need to [capture the Milky Way](http://www.lonelyspeck.com/) or a friend on the beach.
+Calculate Exposure Value (EV) for a given exposure time (seconds), aperature size (ƒ/number), and sensor sensitivity (ISO).  Also shows common conditions for that EV.  Know generally what settings you need to [capture the Milky Way](http://www.lonelyspeck.com/) or a portrait of a friend in the snow.
 
 ## Usage
 
