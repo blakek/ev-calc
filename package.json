@@ -58,7 +58,7 @@
     "file-loader": "^0.9.0",
     "html-webpack-plugin": "^2.26.0",
     "postcss-cssnext": "^2.7.0",
-    "postcss-loader": "^1.2.2",
+    "postcss-loader": "^1.3.3",
     "regenerator": "^0.9.5",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
