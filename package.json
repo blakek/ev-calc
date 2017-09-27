@@ -57,7 +57,7 @@
     "eslint-plugin-react": "^6.9.0",
     "file-loader": "^0.11.0",
     "html-webpack-plugin": "^2.26.0",
-    "postcss-cssnext": "^2.7.0",
+    "postcss-cssnext": "^3.0.0",
     "postcss-loader": "^1.2.2",
     "regenerator": "^0.10.0",
     "style-loader": "^0.16.0",
