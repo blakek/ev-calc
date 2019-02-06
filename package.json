@@ -69,7 +69,7 @@
   "dependencies": {
     "eslint-import-resolver-webpack": "^0.8.1",
     "react": "^16.8.0",
-    "react-dom": "^16.0.0",
+    "react-dom": "^16.8.0",
     "rebass": "^1.0.0-2"
   }
 }
